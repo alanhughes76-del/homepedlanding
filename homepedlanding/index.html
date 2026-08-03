@@ -948,12 +948,22 @@
       <form id="contact-form" onsubmit="handleSubmit(event)" class="fade-in">
         <div class="form-row">
           <div class="form-group">
-            <label for="nombre">Nombre y apellido *</label>
+            <label for="nombre">Nombre y apellido (adulto) *</label>
             <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" />
           </div>
           <div class="form-group">
             <label for="whatsapp">WhatsApp *</label>
             <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+54 9 11 ..." />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="paciente">Nombre y apellido del niño/a *</label>
+            <input type="text" id="paciente" name="paciente" required placeholder="Nombre completo del paciente" />
+          </div>
+          <div class="form-group">
+            <label for="dni">DNI del niño/a</label>
+            <input type="text" id="dni" name="dni" placeholder="Sin puntos ni espacios" />
           </div>
         </div>
         <div class="form-group">
@@ -1158,12 +1168,43 @@
   }
 
   // Form submit
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    const success = document.getElementById('form-success');
-    success.style.display = 'block';
-    e.target.reset();
-    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    const form = e.target;
+    const submitBtn = form.querySelector('.form-submit');
+
+    const data = {
+      nombreAdulto: form.nombre.value,
+      telefono: form.whatsapp.value,
+      nombrePaciente: form.paciente.value,
+      dni: form.dni.value,
+      email: form.email.value,
+      zona: form.localidad.value,
+      edadPaciente: form.edad.value,
+      motivo: form.motivo.value,
+      mensaje: form.mensaje.value,
+      fecha: new Date().toISOString()
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+
+    try {
+      await fetch('https://hook.us2.make.com/46ioxigech71du8b8uu9a2bjhrxj5jpb', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const success = document.getElementById('form-success');
+      success.style.display = 'block';
+      form.reset();
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } catch (err) {
+      alert('Hubo un problema al enviar el formulario. Por favor, escribinos directamente por WhatsApp.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Solicitar turno';
+    }
   }
 
   // Animate on scroll
