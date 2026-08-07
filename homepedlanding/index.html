@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HomePed — Pediatría a Domicilio Premium · Zona Norte GBA</title>
+  <title>Dr. Alan Hughes — Pediatría a Domicilio Premium · Zona Norte GBA</title>
   <meta name="description" content="Visitas pediátricas a domicilio de primer nivel. Controles del recién nacido, controles programados y urgencias no críticas sin sala de espera. Zona Norte GBA." />
-  <meta property="og:title" content="HomePed — Pediatría a Domicilio Premium" />
+  <meta property="og:title" content="Dr. Alan Hughes — Pediatría a Domicilio Premium" />
   <meta property="og:description" content="Tu hijo merece atención pediátrica experta. Sin sala de espera. En casa. Zona Norte GBA." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -187,6 +187,9 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 80px; min-height: 240px;
     }
+    .hero-card-img img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
     .hero-card-footer {
       background: var(--gold); padding: 14px 20px;
       font-family: 'Source Sans 3', sans-serif; font-size: 13px;
@@ -341,6 +344,9 @@
       font-size: 80px; color: rgba(255,255,255,0.3);
       box-shadow: 0 12px 40px rgba(11,42,74,0.2);
       overflow: hidden; max-height: 420px;
+    }
+    .doctor-photo img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
     .doctor-photo-caption {
       font-size: 12px; font-weight: 300; color: var(--text-muted);
@@ -621,7 +627,7 @@
 <nav id="main-nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <span class="nav-logo-name">HomePed</span>
+      <span class="nav-logo-name">Dr. Alan Hughes</span>
       <span class="nav-logo-tag">Pediatría a Domicilio Premium · Zona Norte GBA</span>
     </a>
     <div class="nav-links">
@@ -674,11 +680,10 @@
       </div>
       <div class="hero-right">
         <div class="hero-card">
-          <div class="hero-card-img">👶</div>
+          <div class="hero-card-img"><img src="/consulta-domicilio.jpg" alt="Dr. Alan Hughes atendiendo a una familia en su hogar" loading="eager" /></div>
           <div class="hero-card-footer">
             Atención pediátrica presencial · En tu hogar
           </div>
-          <div class="hero-float-badge">⏱ Consulta confirmada en menos de 2 hs</div>
         </div>
       </div>
     </div>
@@ -826,7 +831,7 @@
   <div class="container">
     <div class="doctor-grid">
       <div>
-        <div class="doctor-photo">🩺</div>
+        <div class="doctor-photo"><img src="/dr-alan-hughes.jpg" alt="Dr. Alan Hughes, Médico Pediatra" loading="lazy" /></div>
         <p class="doctor-photo-caption">Dr. Alan Hughes · Médico Pediatra · MN 111.725 · MP 448.970</p>
       </div>
       <div class="fade-in">
@@ -838,7 +843,7 @@
         </div>
         <p class="doctor-bio">
           Pediatra con formación en Htal. Virgen del Carmen, Zárate · Htal. Tornú, C.A.B.A., con amplia trayectoria de experiencia en atención de recién nacidos, lactantes y niños hasta la adolescencia. Especializado en el seguimiento del desarrollo en los primeros años de vida.<br /><br />
-          Diseñé HomePed para cerrar una brecha que veo todos los días: familias que merecen más que una guardia masiva o un turno dentro de tres semanas.
+          Diseñé este servicio para cerrar una brecha que veo todos los días: familias que merecen más que una guardia masiva o un turno dentro de tres semanas.
         </p>
         <div class="doctor-creds">
           <span class="badge badge-teal">✓ Matrícula Nacional verificada</span>
@@ -948,23 +953,12 @@
       <form id="contact-form" onsubmit="handleSubmit(event)" class="fade-in">
         <div class="form-row">
           <div class="form-group">
-            <label for="nombre">Nombre y apellido (adulto) *</label>
+            <label for="nombre">Nombre y apellido *</label>
             <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" />
           </div>
           <div class="form-group">
             <label for="whatsapp">WhatsApp *</label>
-            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+54 9 11 6965 2157" />
-            <small style="display:block; margin-top:4px; color:#6b7280; font-size:0.82rem;">Incluí el código de país (+54) y el 9 después. Te confirmamos por este medio.</small>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="paciente">Nombre y apellido del niño/a *</label>
-            <input type="text" id="paciente" name="paciente" required placeholder="Nombre completo del paciente" />
-          </div>
-          <div class="form-group">
-            <label for="dni">DNI del niño/a</label>
-            <input type="text" id="dni" name="dni" placeholder="Sin puntos ni espacios" />
+            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+54 9 11 ..." />
           </div>
         </div>
         <div class="form-group">
@@ -1041,7 +1035,7 @@
           ¿Este servicio reemplaza al pediatra de cabecera de mi hijo?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">No. HomePed es un servicio complementario, no sustitutivo. Podés tener tu pediatra de cabecera de siempre y usar HomePed cuando necesitás atención domiciliaria, un control urgente o una segunda opinión. Siempre enviamos el resumen de consulta al médico de referencia si nos lo solicitás.</div>
+        <div class="faq-a">No. Este servicio es complementario, no sustitutivo. Podés tener tu pediatra de cabecera de siempre y recurrir a Dr. Alan Hughes cuando necesitás atención domiciliaria, un control urgente o una segunda opinión. Siempre enviamos el resumen de consulta al médico de referencia si nos lo solicitás.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -1069,7 +1063,7 @@
           ¿El servicio está cubierto por obra social o prepaga?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a">HomePed opera como consulta particular. Al finalizar la visita, emitimos un recibo que podés presentar ante tu prepaga u obra social para solicitar el reintegro parcial, según los términos de tu cobertura. Muchas prepagas premium reconocen estas consultas.</div>
+        <div class="faq-a">El servicio opera como consulta particular. Al finalizar la visita, emitimos un recibo que podés presentar ante tu prepaga u obra social para solicitar el reintegro parcial, según los términos de tu cobertura. Muchas prepagas premium reconocen estas consultas.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">
@@ -1093,7 +1087,7 @@
 <footer>
   <p class="footer-quote">"La mejor medicina empieza por escuchar."</p>
   <div class="footer-logo-area">
-    <div class="footer-logo-name">HomePed</div>
+    <div class="footer-logo-name">Dr. Alan Hughes</div>
     <div class="footer-logo-tag">Pediatría a Domicilio Premium · Zona Norte GBA</div>
   </div>
   <div class="footer-grid">
@@ -1127,7 +1121,7 @@
     </div>
   </div>
   <div class="footer-emergency">⚠️ Ante una emergencia pediátrica: <strong>SAME 107</strong> · Este servicio no reemplaza la urgencia grave</div>
-  <div class="footer-bottom">© 2025 HomePed. Todos los derechos reservados.</div>
+  <div class="footer-bottom">© 2025 Dr. Alan Hughes. Todos los derechos reservados.</div>
 </footer>
 
 <!-- FLOATING WHATSAPP -->
@@ -1169,43 +1163,12 @@
   }
 
   // Form submit
-  async function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
-    const form = e.target;
-    const submitBtn = form.querySelector('.form-submit');
-
-    const data = {
-      nombreAdulto: form.nombre.value,
-      telefono: form.whatsapp.value,
-      nombrePaciente: form.paciente.value,
-      dni: form.dni.value,
-      email: form.email.value,
-      zona: form.localidad.value,
-      edadPaciente: form.edad.value,
-      motivo: form.motivo.value,
-      mensaje: form.mensaje.value,
-      fecha: new Date().toISOString()
-    };
-
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Enviando...';
-
-    try {
-      await fetch('https://hook.us2.make.com/46ioxigech71du8b8uu9a2bjhrxj5jpb', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-      const success = document.getElementById('form-success');
-      success.style.display = 'block';
-      form.reset();
-      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    } catch (err) {
-      alert('Hubo un problema al enviar el formulario. Por favor, escribinos directamente por WhatsApp.');
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Solicitar turno';
-    }
+    const success = document.getElementById('form-success');
+    success.style.display = 'block';
+    e.target.reset();
+    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
   // Animate on scroll
