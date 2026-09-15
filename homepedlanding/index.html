@@ -344,10 +344,10 @@
     <div class="nav-links">
       <a href="#consulta">La consulta</a>
       <a href="#medico">El médico</a>
-      <a href="#admision">Admisión</a>
+      <a href="#reservar">Reservar turno</a>
       <a href="#faq">Preguntas</a>
-      <a href="https://wa.me/5491169652157?text=Hola%20Dr.%20Hughes%2C%20necesito%20una%20consulta%20hoy.%20Le%20cuento%3A" target="_blank" rel="noopener" class="link-urgent">¿Urgencia hoy?</a>
-      <a href="#admision" class="btn btn-primary nav-cta">Solicitar entrevista</a>
+      <a href="https://wa.me/13502406057?text=Hola%20Dr.%20Hughes%2C%20necesito%20una%20consulta%20hoy.%20Le%20cuento%3A" target="_blank" rel="noopener" class="link-urgent">¿Urgencia hoy?</a>
+      <a href="#reservar" class="btn btn-primary nav-cta">Reservar turno</a>
     </div>
     <button class="hamburger" onclick="toggleMenu()" aria-label="Abrir menú" aria-expanded="false" id="burger">
       <span></span><span></span><span></span>
@@ -356,10 +356,10 @@
   <div class="mobile-menu" id="mobile-menu">
     <a href="#consulta" onclick="closeMenu()">La consulta</a>
     <a href="#medico" onclick="closeMenu()">El médico</a>
-    <a href="#admision" onclick="closeMenu()">Admisión</a>
+    <a href="#reservar" onclick="closeMenu()">Reservar turno</a>
     <a href="#faq" onclick="closeMenu()">Preguntas</a>
-    <a href="https://wa.me/5491169652157?text=Hola%20Dr.%20Hughes%2C%20necesito%20una%20consulta%20hoy.%20Le%20cuento%3A" target="_blank" rel="noopener">¿Urgencia hoy? Escribime</a>
-    <a href="#admision" class="btn btn-primary" onclick="closeMenu()">Solicitar entrevista</a>
+    <a href="https://wa.me/13502406057?text=Hola%20Dr.%20Hughes%2C%20necesito%20una%20consulta%20hoy.%20Le%20cuento%3A" target="_blank" rel="noopener">¿Urgencia hoy? Escribime</a>
+    <a href="#reservar" class="btn btn-primary" onclick="closeMenu()">Reservar turno</a>
   </div>
 </nav>
 
@@ -374,8 +374,8 @@
           Atención pediátrica en tu casa, sin apuro y sin sala de espera. Controles del recién nacido, seguimiento del crecimiento y urgencias no críticas — siempre con el mismo médico, que conoce la historia de tu familia y sigue disponible entre consulta y consulta.
         </p>
         <div class="hero-ctas">
-          <a href="#admision" class="btn btn-primary">Solicitar entrevista de admisión</a>
-          <a href="https://wa.me/5491169652157?text=Hola%20Dr.%20Hughes%2C%20necesito%20una%20consulta%20hoy.%20Le%20cuento%3A" target="_blank" rel="noopener" class="link-urgent">Necesito una visita hoy →</a>
+          <a href="#reservar" class="btn btn-primary">Reservar turno a domicilio</a>
+          <a href="https://wa.me/13502406057?text=Hola%20Dr.%20Hughes%2C%20necesito%20una%20consulta%20hoy.%20Le%20cuento%3A" target="_blank" rel="noopener" class="link-urgent">Necesito una visita hoy →</a>
         </div>
         <p class="hero-note">
           Una videollamada de 15 minutos, sin cargo y sin compromiso, para conocernos y ver si soy el pediatra que tu familia necesita.
@@ -563,8 +563,8 @@
 
     <div class="exclusive fade-in">
       <h3>Atiendo pocas familias. A propósito.</h3>
-      <p>Todo lo anterior solo es posible con una agenda deliberadamente corta. Por eso trabajo con un número limitado de familias por año y el ingreso es por entrevista previa. No es una estrategia comercial: es la condición que hace posible la consulta que prometo.</p>
-      <a href="#admision" class="btn btn-light">Solicitar entrevista de admisión</a>
+      <p>Todo lo anterior solo es posible con una agenda deliberadamente corta. Por eso trabajo con un número limitado de familias por año. No es una estrategia comercial: es la condición que hace posible la consulta que prometo.</p>
+      <a href="#reservar" class="btn btn-light">Reservar turno a domicilio</a>
     </div>
   </div>
 </section>
@@ -611,33 +611,46 @@
 </section>
 
 <!-- ══ ADMISIÓN ══ -->
-<section id="admision" class="sec-white">
+<section id="reservar" class="sec-white">
   <div class="container">
     <div class="fade-in">
-      <span class="section-label">Admisión</span>
-      <h2>Cómo empezamos</h2>
-      <p class="lead">Tres pasos. Ninguno te compromete a nada hasta que los dos estemos seguros.</p>
+      <span class="section-label">Reservar turno</span>
+      <h2>Coordiná tu visita a domicilio</h2>
+      <p class="lead">Elegí el tipo de consulta y reservá el horario que te quede cómodo. Las dos modalidades son siempre en tu casa.</p>
     </div>
-    <div class="steps fade-in">
+    <div class="steps fade-in" style="grid-template-columns: repeat(2, 1fr); max-width: 720px;">
       <div class="step">
-        <div class="step-num">1</div>
-        <h3>Escribime</h3>
-        <p>Un mensaje por WhatsApp contándome brevemente cómo está compuesta tu familia y qué estás buscando.</p>
+        <h3>Control de salud</h3>
+        <p>Controles del niño sano, seguimiento del desarrollo y consultas programadas.</p>
+        <a href="https://cal.com/dralan.hughes/control-de-salud" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:18px; width:100%;">Reservar control →</a>
       </div>
       <div class="step">
-        <div class="step-num">2</div>
-        <h3>Nos conocemos</h3>
-        <p>Una videollamada de 15 minutos, sin cargo. Te explico exactamente cómo trabajo y qué incluye el acompañamiento. Vos me contás la historia de tus hijos. Los dos decidimos si tiene sentido.</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h3>Primera visita en tu casa</h3>
-        <p>Si avanzamos, coordinamos la primera visita: historia clínica completa, examen y plan de seguimiento para el año.</p>
+        <h3>Consulta por urgencia</h3>
+        <p>Fiebre, cuadros respiratorios y otras urgencias no críticas, hoy mismo.</p>
+        <a href="https://cal.com/dralan.hughes/consulta-por-urgencia" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:18px; width:100%;">Reservar urgencia →</a>
       </div>
     </div>
-    <div class="steps-note fade-in">
-      <span>Si lo que necesitás hoy es una consulta puntual por un chico enfermo, no hace falta nada de esto. Escribime y coordinamos la visita.</span>
-      <a href="https://wa.me/5491169652157?text=Hola%20Dr.%20Hughes%2C%20necesito%20una%20consulta%20hoy.%20Le%20cuento%3A" target="_blank" rel="noopener" class="link-urgent">Necesito una visita hoy →</a>
+
+    <div class="steps-note fade-in" style="display:block; margin-top:44px;">
+      <h3 style="margin-bottom:8px;">¿Preferís que te contactemos nosotros?</h3>
+      <p style="margin-bottom:22px; color: var(--muted); font-size: 15px;">Dejanos tus datos y te escribimos para coordinar la visita.</p>
+      <form id="contact-form" onsubmit="handleContactSubmit(event)">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;">
+          <input type="text" id="nombreAdulto" placeholder="Tu nombre completo" required style="padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; font-size:15px; background:var(--mist);">
+          <input type="tel" id="telefono" placeholder="WhatsApp (+54 9 11 ...)" required style="padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; font-size:15px; background:var(--mist);">
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;">
+          <input type="text" id="nombrePaciente" placeholder="Nombre del niño/a" required style="padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; font-size:15px; background:var(--mist);">
+          <input type="text" id="dni" placeholder="DNI del niño/a" style="padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; font-size:15px; background:var(--mist);">
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;">
+          <input type="email" id="email" placeholder="Email" required style="padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; font-size:15px; background:var(--mist);">
+          <input type="text" id="zona" placeholder="Zona / localidad" style="padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; font-size:15px; background:var(--mist);">
+        </div>
+        <textarea id="motivo" placeholder="Contanos brevemente qué necesitás" rows="3" style="width:100%; padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; font-size:15px; background:var(--mist); margin-bottom:18px; resize:vertical;"></textarea>
+        <button type="submit" class="btn btn-outline">Enviar consulta</button>
+        <p id="form-success" style="display:none; margin-top:16px; color: var(--blue-mid); font-weight:600;">¡Gracias! Te vamos a contactar a la brevedad.</p>
+      </form>
     </div>
   </div>
 </section>
@@ -652,11 +665,11 @@
     <div class="faq-list fade-in">
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">¿Sos el pediatra de cabecera o un servicio complementario?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Puedo ser el pediatra de cabecera de tu familia, con la ventaja de que atiendo en tu casa. El acompañamiento combina los controles del niño sano programados con la atención de urgencias no críticas durante todo el año. Si preferís conservar tu pediatra actual y usar el servicio de forma puntual, también es posible: lo conversamos en la entrevista de admisión.</div>
+        <div class="faq-a">Puedo ser el pediatra de cabecera de tu familia, con la ventaja de que atiendo en tu casa. El acompañamiento combina los controles del niño sano programados con la atención de urgencias no críticas durante todo el año. Si preferís conservar tu pediatra actual y usar el servicio de forma puntual, también es posible: escribinos y lo conversamos.</div>
       </div>
       <div class="faq-item">
-        <button class="faq-q" onclick="toggleFaq(this)">¿Por qué hay una entrevista previa?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Porque atiendo a un número limitado de familias y necesito conocerlas antes de comprometerme. La entrevista dura 15 minutos, no tiene cargo y sirve para las dos partes: vos entendés exactamente cómo trabajo y qué incluye, y yo entiendo si soy el médico indicado para tus hijos. A veces la respuesta honesta es que no lo soy, y también te lo voy a decir.</div>
+        <button class="faq-q" onclick="toggleFaq(this)">¿Cómo reservo un turno?<span class="faq-icon">+</span></button>
+        <div class="faq-a">Directo desde esta página: elegís "Control de salud" o "Consulta por urgencia" en la sección de reservas y accedés al horario disponible. Si preferís que te contactemos nosotros primero, completá el formulario o escribinos por WhatsApp.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">¿En qué zonas atendés?<span class="faq-icon">+</span></button>
@@ -688,8 +701,8 @@
     <h2>No esperes a la próxima fiebre de medianoche.</h2>
     <p>La diferencia entre criar con ansiedad y criar con tranquilidad suele ser tener a quién preguntarle.</p>
     <div class="cierre-ctas">
-      <a href="https://wa.me/5491169652157?text=Hola%20Dr.%20Hughes%2C%20me%20gustar%C3%ADa%20solicitar%20una%20entrevista%20de%20admisi%C3%B3n." target="_blank" rel="noopener" class="btn btn-light">Solicitar entrevista de admisión</a>
-      <a href="https://wa.me/5491169652157?text=Hola%20Dr.%20Hughes%2C%20necesito%20una%20consulta%20hoy.%20Le%20cuento%3A" target="_blank" rel="noopener" class="btn btn-ghost-light">Necesito una visita hoy</a>
+      <a href="#reservar" class="btn btn-light">Reservar turno a domicilio</a>
+      <a href="https://wa.me/13502406057?text=Hola%20Dr.%20Hughes%2C%20necesito%20una%20consulta%20hoy.%20Le%20cuento%3A" target="_blank" rel="noopener" class="btn btn-ghost-light">Necesito una visita hoy</a>
     </div>
   </div>
 </section>
@@ -705,7 +718,7 @@
       <div class="footer-col">
         <div class="footer-col-title">Contacto</div>
         <ul>
-          <li><a href="https://wa.me/5491169652157" target="_blank" rel="noopener">WhatsApp: +54 9 11 6965-2157</a></li>
+          <li><a href="https://wa.me/13502406057" target="_blank" rel="noopener">WhatsApp: +1 350 240 6057</a></li>
           <li>Lunes a viernes: 8:00–20:00</li>
           <li>Sábados: 9:00–13:00</li>
         </ul>
@@ -732,7 +745,7 @@
 </footer>
 
 <!-- ══ FLOTANTES ══ -->
-<a id="wa-float" href="https://wa.me/5491169652157?text=Hola%20Dr.%20Hughes%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20acompa%C3%B1amiento%20pedi%C3%A1trico%20a%20domicilio." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+<a id="wa-float" href="https://wa.me/13502406057?text=Hola%20Dr.%20Hughes%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20el%20acompa%C3%B1amiento%20pedi%C3%A1trico%20a%20domicilio." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </svg>
@@ -770,6 +783,38 @@
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(function (el) { obs.observe(el); });
+
+  async function handleContactSubmit(e) {
+    e.preventDefault();
+    var form = e.target;
+    var btn = form.querySelector('button[type="submit"]');
+    var data = {
+      nombreAdulto: document.getElementById('nombreAdulto').value,
+      telefono: document.getElementById('telefono').value,
+      nombrePaciente: document.getElementById('nombrePaciente').value,
+      dni: document.getElementById('dni').value,
+      email: document.getElementById('email').value,
+      zona: document.getElementById('zona').value,
+      motivo: document.getElementById('motivo').value,
+      fecha: new Date().toISOString()
+    };
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    try {
+      await fetch('https://hook.us2.make.com/46ioxigech71du8b8uu9a2bjhrxj5jpb', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      form.reset();
+      document.getElementById('form-success').style.display = 'block';
+    } catch (err) {
+      alert('Hubo un problema al enviar el formulario. Por favor, escribinos directamente por WhatsApp.');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Enviar consulta';
+    }
+  }
 </script>
 </body>
 </html>
