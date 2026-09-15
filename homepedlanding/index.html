@@ -111,6 +111,8 @@
     .nav-links { display: flex; align-items: center; gap: 26px; }
     .nav-links a { font-size: 14.5px; color: var(--blue-deep); text-decoration: none; transition: color .2s; }
     .nav-links a:hover { color: var(--blue-mid); }
+    .nav-links a.btn-primary { color: #fff; }
+    .nav-links a.btn-primary:hover { color: #fff; }
     .nav-cta { padding: 10px 20px; font-size: 14px; }
     .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 6px; }
     .hamburger span { display: block; width: 24px; height: 2px; background: var(--blue-deep); border-radius: 2px; }
@@ -592,13 +594,13 @@
           <dl>
             <dt>Matrículas</dt>
             <dd>MN 111.725 · MP 448.970</dd>
-            <dt>Formación</dt>
-            <dd>Hospital Virgen del Carmen (Zárate)<br />Hospital Tornú (C.A.B.A.)</dd>
+            <dt>Orientación</dt>
+            <dd>Crianza</dd>
           </dl>
         </div>
       </div>
       <div class="doc-body">
-        <p class="first">Soy Alan Hughes, médico pediatra. Me formé en el Hospital Virgen del Carmen de Zárate y en el Hospital Tornú de la Ciudad de Buenos Aires, donde aprendí la pediatría que se practica cuando hay poco tiempo y mucha demanda.</p>
+        <p class="first">Soy Alan Hughes, médico pediatra, con orientación en Crianza. Aprendí la pediatría que se practica cuando hay poco tiempo y mucha demanda.</p>
         <p>Aprendí bien. Y también aprendí lo que se pierde.</p>
         <p>Se pierde la pregunta que la mamá tenía guardada y no llegó a hacer. Se pierde el dato que no aparece en los primeros diez minutos y que a veces cambia el diagnóstico. Se pierde la posibilidad de mirar a un chico a los ojos y explicarle qué le está pasando en su propio cuerpo.</p>
         <p>Este servicio nació de una decisión concreta: atender a menos familias para poder atenderlas como creo que hay que hacerlo. En su casa, con el tiempo necesario, y siendo siempre el mismo médico que conoce su historia.</p>
@@ -637,8 +639,8 @@
     </div>
 
     <div class="steps-note fade-in" style="display:block; margin-top:44px;">
-      <h3 style="margin-bottom:8px;">¿Preferís que te contactemos nosotros?</h3>
-      <p style="margin-bottom:22px; color: var(--muted); font-size: 15px;">Dejanos tus datos y te escribimos para coordinar la visita.</p>
+      <h3 style="margin-bottom:8px;">¿Preferís que te contacte yo?</h3>
+      <p style="margin-bottom:22px; color: var(--muted); font-size: 15px;">Dejame tus datos y te escribo para coordinar la visita.</p>
       <form id="contact-form" onsubmit="handleContactSubmit(event)">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;">
           <input type="text" id="nombreAdulto" placeholder="Tu nombre completo" required style="padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; font-size:15px; background:var(--mist);">
@@ -654,7 +656,7 @@
         </div>
         <textarea id="motivo" placeholder="Contanos brevemente qué necesitás" rows="3" style="width:100%; padding:13px 15px; border:1px solid var(--border); border-radius:var(--radius); font-family:inherit; font-size:15px; background:var(--mist); margin-bottom:18px; resize:vertical;"></textarea>
         <button type="submit" class="btn btn-outline">Enviar consulta</button>
-        <p id="form-success" style="display:none; margin-top:16px; color: var(--blue-mid); font-weight:600;">¡Gracias! Te vamos a contactar a la brevedad.</p>
+        <p id="form-success" style="display:none; margin-top:16px; color: var(--blue-mid); font-weight:600;">¡Gracias! Te voy a contactar a la brevedad.</p>
       </form>
     </div>
   </div>
@@ -670,11 +672,11 @@
     <div class="faq-list fade-in">
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">¿Sos el pediatra de cabecera o un servicio complementario?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Puedo ser el pediatra de cabecera de tu familia, con la ventaja de que atiendo en tu casa. El acompañamiento combina los controles del niño sano programados con la atención de urgencias no críticas durante todo el año. Si preferís conservar tu pediatra actual y usar el servicio de forma puntual, también es posible: escribinos y lo conversamos.</div>
+        <div class="faq-a">Puedo ser el pediatra de cabecera de tu familia, con la ventaja de que atiendo en tu casa. El acompañamiento combina los controles del niño sano programados con la atención de urgencias no críticas durante todo el año. Si preferís conservar tu pediatra actual y usar el servicio de forma puntual, también es posible: escribime y lo conversamos.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">¿Cómo reservo un turno?<span class="faq-icon">+</span></button>
-        <div class="faq-a">Directo desde esta página: elegís "Control de salud" o "Consulta por urgencia" en la sección de reservas y accedés al horario disponible. Si preferís que te contactemos nosotros primero, completá el formulario o escribinos por WhatsApp.</div>
+        <div class="faq-a">Directo desde esta página: elegís "Control de salud" o "Consulta por urgencia" en la sección de reservas y accedés al horario disponible. Si preferís que te contacte yo primero, completá el formulario o escribime por WhatsApp.</div>
       </div>
       <div class="faq-item">
         <button class="faq-q" onclick="toggleFaq(this)">¿En qué zonas atendés?<span class="faq-icon">+</span></button>
@@ -814,7 +816,7 @@
       form.reset();
       document.getElementById('form-success').style.display = 'block';
     } catch (err) {
-      alert('Hubo un problema al enviar el formulario. Por favor, escribinos directamente por WhatsApp.');
+      alert('Hubo un problema al enviar el formulario. Por favor, escribime directamente por WhatsApp.');
     } finally {
       btn.disabled = false;
       btn.textContent = 'Enviar consulta';
